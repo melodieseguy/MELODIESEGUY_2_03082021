@@ -19,7 +19,7 @@ body {
 /*header*/
 
 h1 {
-    font-size: 1em;
+    font-size: 40px;
 }
 
 .logo-reservia {
@@ -75,7 +75,7 @@ ul {
     font-size: 18px;
 }
   
-  .iconemap {
+.iconemap {
     font-size: 25px;
     background-color: #f2f2f2;
     padding: 10px 10px;
@@ -84,7 +84,7 @@ ul {
     border-radius: 15px 0 0 15px;
 }
 
- .barre-recherche {
+.barre-recherche {
      display: flex;
 }
 
@@ -133,3 +133,33 @@ input {
     justify-content: center;
     align-items: center;   
 }
+
+/*infobulle*/
+
+.container-info  {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    border: rgb(206, 206, 206);
+    border-radius: 2px;
+}
+
+/*Main*/
+
+h2 {
+    font-size: 20px;
+}
+
+.photo-hotel {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    background: rgb(206, 206, 206);
+    border-radius: 18px;
+}
+
+.photo-hotel .item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
