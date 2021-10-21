@@ -7,10 +7,13 @@
     list-style: none;
 }    
 body {
-    max-width: 1800px;
     margin: 0 auto;
 }
 
+.container-site {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .flex {
     display: flex;
@@ -24,23 +27,35 @@ h1 {
 
 .logo-reservia {
     margin-left: 15px;
+    font-size: 25px;
 }
 
 .nav-link {
     list-style-type: none;
+    padding: 15px;
+    font-weight: 550;
+}
+
+.nav-link a:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 53px;
+    color: #0065FC;
 }
 
 .nav-link a {
     color: black;
     padding: 25px;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .nav-container {
     display: flex;  
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -57,6 +72,18 @@ ul {
 
 .nav-sinscrire {
     display: flex;
+    color: #0065FC;
+    font-size: 18px;
+}
+
+.nav-sinscrire a {
+    font-size: 18px;
+}
+
+.filtres, .title {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .logosearch {
@@ -66,17 +93,18 @@ ul {
 }
   
 .btn-recherche {
-    background-color: #0065fc;
+    background-color: #0065FC;
     color: white;
     border: none;
     padding: 15px 15px;
     border-radius: 0px 10px 10px 0px;
     font-weight: bold;
     font-size: 18px;
+    height: 50px;
 }
   
 .iconemap {
-    font-size: 25px;
+    font-size: 20px;
     background-color: #f2f2f2;
     padding: 10px 10px;
     width: 30px;
@@ -88,78 +116,170 @@ ul {
      display: flex;
 }
 
-input {
-    height: 50px;
-    padding-right: 60px;
+.rechercher_loupe {
+    display: none;
+    padding: 15px;
+    font-size: 18px;
 }
 
+input {
+    height: 50px;
+    border-bottom: solid #f2f2f2;
+    border-top: solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    width: 250px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .description-site h1 {
+    font-size: 25px;
+}
+
+.description-site p {
+    font-weight: 550;
     font-size: 20px;
 }
 
 /*filtres*/
 
-.container-filtres {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    flex-wrap: wrap;
+.boutonfiltre p {
+    font-weight: bold;
+    font-size: 15px;
 }
 
-.content-filtres {
+.filtres {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 0;
 }
 
-.boutonfiltre {
+.filtres,
+.filtres .content {
     display: flex;
-    position: relative;
-    margin-left: 25px;
-    border: solid 2px rgb(206, 206, 206);
-    border-radius: 25px;
-    height: 47px;
-    align-items: center;
-    padding: 0 15px 0 0;
+    flex-flow: row wrap;
+    font-size: 20px;
 }
 
-.circle-icon-filter {
-    width: 50px;
+.filtres .title {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.filtres .boutonfiltre {
+    display: flex;
+    border-radius: 200px;
+    border: 2px #f2f2f2b2 solid;
     height: 50px;
-    background-color: #b7d4ff;
-    color: #0065fc;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+    position: relative;
+    padding-left: 55px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
+
+/*.filtres .boutonfiltre:hover {
+    transform: scale(1.05);
+}*/
+
+
+.filtres .boutonfiltre i {
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;
+}
+
 
 /*infobulle*/
 
-.container-info  {
+.information {
     display: flex;
-    justify-content: space-between;
-    width: 440px;
-    border: rgb(206, 206, 206);
-    border-radius: 2px;
+    align-items: center;
 }
 
-/*Main*/
+.cercle-info{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    text-align: center;
+    color: #0065FC;
+}
+
+
+.information p {
+margin-left: 14px;
+}
+
+/*MAIN*/
+
+/*hebergements*/
+
+.hebergements {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 13px;
+    width: 60%;
+}
 
 h2 {
     font-size: 20px;
 }
 
-.photo-hotel {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    background: rgb(206, 206, 206);
-    border-radius: 18px;
+.hotel-container {
+    height: 220px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #55555538;
+    margin: 12px;
 }
 
-.photo-hotel .item {
+.hotel-container img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.hebergements-container {
     display: flex;
     flex-wrap: wrap;
 }
 
+.greyStar {
+    color: grey;
+}
+
+.blueStar {
+    color: #0065FC;
+}
+
+.hotel-etoiles {
+    font-size: 11px;
+    letter-spacing: -1px;
+}
+
+.hotel-description {
+    padding-left: 12px;
+}
+
+.texte-populaire, h3 {
+    margin-top: 2px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
