@@ -644,3 +644,17 @@ main {
         height: 190px;
         margin-bottom: 45px;
     }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer1, .footer2, .footer3 {
+        padding-top: 50px;
+    }
+
+    .footer1 h3, .footer2 h3, .footer3 h3 {
+        font-size: 26px;
+    }
+
+}
