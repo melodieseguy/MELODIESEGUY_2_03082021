@@ -283,3 +283,64 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+/*populaires*/
+
+.populaires {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 13px;
+    width: 30%;
+}
+
+.populaires-hotel-container {
+    height: 160px;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #55555538;
+    margin: 12px;
+}
+
+.populaires-hotel-container img {
+    border-radius: 15px 0 0 15px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.populaires-hotel-container,img .hotel-populaire-nom {
+    display: flex;
+}
+
+.texte-populaire {
+    padding-left: 10%;
+}
+
+.hotel-populaire-etoiles {
+    padding-left: 10%;
+    font-size: 12px;
+    letter-spacing: -1px;
+    padding-top: 42px;
+}
+
+.populaires-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hebergements .populaires {
+    display: flex;
+}
+
+.populaires-titre, .chartline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chartline {
+    font-size: 20px;
+}
