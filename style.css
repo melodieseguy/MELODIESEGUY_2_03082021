@@ -460,3 +460,97 @@ main {
     padding: 10px 10px 10px 0;
 }
 
+/*Media queries*/
+
+@media screen and (max-width: 640px) {
+    .cercle-info{
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        border: 2px solid #f2f2f2;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .information p{
+        width: 300px;
+    }
+  }
+
+@media all and (max-width: 770px) {
+
+    .logo-reservia {
+        margin-left: 20px;
+    }
+    .nav-sinscrire a {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px #f2f2f2 solid;
+        padding-bottom: 20px;
+    }
+
+    .nav-link:hover {
+        border-bottom: 3px #0065FC solid;
+    }
+
+    .nav-link a:hover {
+        border-top: inherit;
+    }
+
+    .filtres {
+        margin-left: 20px;
+    }
+
+    .content-filtres {
+        display: flex;
+    }
+
+    .description-site {
+        margin-left: 20px;
+    }
+
+    .btn-recherche {
+        display: none;
+        display: block;
+    }
+
+    .btn-recherche {
+        display: none;
+    }
+
+    .rechercher_loupe {
+        display: block;
+        width: 50px;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .rechercher_loupe .fas {
+        color: white;
+    }
+
+    .barre-recherche {
+        display: flex;
+        justify-content: center;
+    }
+
+    .information {
+        margin: 0 0 20px 20px;
+    }
