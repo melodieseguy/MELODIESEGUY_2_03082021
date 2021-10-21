@@ -436,3 +436,27 @@ main {
 .activites-description {
     padding: 10px;
 }
+
+/*Footer*/
+
+.footer-container {
+    background-color: #F2F2F2;
+    padding: 48px 20px 51px 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+
+.footer1, .footer2, .footer3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre-propos, .titre-hebergements, .titre-assistance {
+    padding-bottom: 10px;
+}
+
+.footer1 a, .footer2 a, .footer3 a {
+    padding: 10px 10px 10px 0;
+}
+
