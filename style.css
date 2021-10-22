@@ -180,9 +180,9 @@ input {
     margin-bottom: 10px;
 }
 
-/*.filtres .boutonfiltre:hover {
+.filtres .boutonfiltre:hover {
     transform: scale(1.05);
-}*/
+}
 
 
 .filtres .boutonfiltre i {
